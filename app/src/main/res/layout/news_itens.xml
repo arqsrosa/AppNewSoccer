@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
                 <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -29,27 +29,31 @@
                 android:padding="16dp">
 
                 <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@raiasulguarderia"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Raia Sul Guarderia"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        tools:ignore="DuplicateIds" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Uma escola de Canoa Havaiana e Guarderia"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary" />
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Uma escola de Canoa Havaiana e Guarderia"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Mais do que um exercício é um estilo de vida"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary" />
+                    <TextView
+                        android:id="@+id/tvParagrafo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Mais do que um exercício é um estilo de vida"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
             </LinearLayout>
 
@@ -60,18 +64,20 @@
                 android:layout_margin="8dp"
                 android:orientation="horizontal">
 
-                <com.google.android.material.button.MaterialButton
-                    style="?attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:text="AGENDAR" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvOpenLink"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="AGENDAR" />
 
-                <com.google.android.material.button.MaterialButton
-                    style="?attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="BUSCAR EQUIPAMENTO" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvOpenData"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BUSCAR EQUIPAMENTO" />
 
                  </LinearLayout>
 
@@ -81,7 +87,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageViewFavorite"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginStart="100dp"
@@ -91,13 +97,13 @@
         app:srcCompat="@drawable/ic_favorite" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imageViewShare"
         android:layout_width="57dp"
         android:layout_height="59dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavorite"
         app:srcCompat="@drawable/ic_share"
         tools:layout_editor_absoluteY="422dp" />
 

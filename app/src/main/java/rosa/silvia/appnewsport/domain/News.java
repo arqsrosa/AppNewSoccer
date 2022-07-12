@@ -4,7 +4,12 @@ public class News {
     private String title;
     private String description;
 
-    public String getTitle() {
+    public News(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
+    public int getTitle() {
         return title;
     }
 
