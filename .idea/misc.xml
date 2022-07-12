@@ -10,7 +10,8 @@
         <entry key="app/src/main/res/drawable/ic_oc6_background.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1671875" />
         <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.1671875" />
-        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.1671875" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/news_item.xml" value="0.1671875" />
         <entry key="app/src/main/res/layout/news_itens.xml" value="0.25" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1671875" />
       </map>

@@ -1,4 +1,4 @@
-package rosa.silvia.appnewsport;
+package me.dio.soccernews;
 
 import org.junit.Test;
 
